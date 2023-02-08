@@ -1,0 +1,27 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../image/download.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.sub-btn {
+  border-radius: 3px;
+}
+.sub-btn:hover {
+  color: rgb(21, 222, 81);
+}
+.feedback-img {
+  display: grid;
+  place-item: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: large;
+}

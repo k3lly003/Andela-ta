@@ -1,0 +1,71 @@
+body {
+  background-color: rgb(31, 29, 29);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.logo-container {
+  float: right;
+  margin: 0 5px;
+}
+.topnav {
+  display: flex;
+  gap: 3rem;
+  justify-content: right;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  gap: 4rem;
+}
+
+.nav-feedback:hover {
+  color: white;
+}
+
+.nav-home:hover {
+  color: rgb(236, 240, 240);
+}
+
+.nav-work:hover {
+  color: rgb(246, 243, 246);
+}
+
+.nav-home {
+  text-decoration: none;
+  font-weight: bolder;
+}
+.nav-feedback {
+  text-decoration: none;
+  font-weight: bolder;
+}
+.nav-work {
+  text-decoration: none;
+  font-weight: bolder;
+}
+.texts {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(239, 242, 244);
+  text-align: right;
+  font-weight: 800;
+  padding-top: 30vh;
+  text-size-adjust:;
+}
+
+.icons {
+  color: white;
+  justify-content: right;
+  padding-bottom: 12rem;
+  padding-top: 80vh;
+}
+.icons ul li {
+  list-style-type: none;
+}
+
+.img {
+  position: cover;
+}
