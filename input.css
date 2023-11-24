@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+}
+#form h1 {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  color: rgb(169, 128, 78);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+#form {
+  width: 30%;
+  border: 0;
+  background: linear-gradient(
+    to bottom,
+    rgb(198, 199, 198),
+    rgb(255, 255, 255)
+  );
+  border-radius: 10px;
+  padding: 0% 7% 7% 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+input {
+  padding-top: 30px;
+  border: 0px;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  background-color: rgba(232, 233, 234, 0);
+  font-family: sans-serif;
+  font-size: large;
+}
+button {
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: rgb(47, 238, 120);
+  border: 0;
+  cursor: pointer;
+}
