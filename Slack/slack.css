@@ -1,5 +1,6 @@
 * {
   font-family: sans-serif;
+  border: 0;
 }
 body {
   display: flex;
@@ -8,24 +9,24 @@ body {
   max-height: fit-content;
 }
 .container {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
   width: inherit;
 }
 .child1 {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   height: 100%;
   width: 60%;
 }
 .image {
-  border: 2px solid purple;
+  /* border: 2px solid purple; */
   width: 65vw;
   height: 90vh;
 }
 .child2 {
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
 
   width: 40vw;
   display: flex;
