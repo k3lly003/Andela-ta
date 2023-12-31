@@ -6,15 +6,11 @@
     <title>snap chat login page</title>
   </head>
   <link rel="stylesheet" href="./snap.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  />
   <body>
     <div class="menu-bar">
-      <i class="fa fa-snapchat" aria-hidden="true"></i>
+      <img src="./Vector.png" alt="Snap-Logo" class="logo" ="50" height="50" />
     </div>
-    <div>
+    <div class="container">
       <div class="welcome">
         <h3>Welcome Back!</h3>
       </div>
@@ -26,20 +22,43 @@
         <span>OR</span>
       </div>
       <div class="form">
-        <label for="username or email">USERNAME OR EMAIL</label>
-        <input type="text" />
-        <label for="password">PASSWORD</label>
-        <input type="text" />
-      </div>
-      <div class="forgot">
-        <a href=""><p>Forgot Password?</p></a>
-      </div>
-      <div class="button2">
-        <button>Log In</button>
+        <form action="" id="form">
+          <label for="username or email">USERNAME OR EMAIL</label>
+          <input type="text" id="input1" />
+          <label for="password">PASSWORD</label>
+          <input type="text" id="input2" />
+          <div class="forgot">
+            <a href=""><p>Forgot Password?</p></a>
+          </div>
+          <div class="button2">
+            <button class="buto2" type="submit">Log In</button>
+          </div>
+        </form>
       </div>
       <div class="last">
         <p><span>Sign Up &nbsp;</span>if you don't have an account</p>
       </div>
     </div>
+    <script>
+      const form = document
+        .getElementById("form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          let userNameValues = document.getElementById("input1").value;
+          let userPassValues = document.getElementById("input2").value;
+          if (
+            userNameValues.length >= 5 &&
+            userNameValues.length <= 8 &&
+            userPassValues.length >= 5 &&
+            userPassValues.length <= 8
+          ) {
+            alert("Your successfully loged in!");
+            window.location.reload();
+          } else {
+            alert("Please your cridentials should be between 5 and 8 values.");
+            window.location.reload();
+          }
+        });
+    </script>
   </body>
 </html>
