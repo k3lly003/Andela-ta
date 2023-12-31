@@ -31,23 +31,48 @@
         <div class="four">
           <p>or Sign in with Email</p>
         </div>
-        <div class="five">
-          <label for="email">Email</label><br />
-          <input type="text" class="input" /><br />
-          <label for="password">Password</label><br />
-          <input type="password" class="input" />
-        </div>
-        <div class="last">
-          <div class="check-re">
-            <input type="checkbox" />
-            <p>Remember Me?</p>
+        <form action="" id="submit" class="form">
+          <div class="five">
+            <label for="email">Email</label><br />
+            <input type="text" class="input" id="input1" /><br />
+            <label for="password">Password</label><br />
+            <input type="password" class="input" id="input2" />
           </div>
-          <div class="forgot">
-            <p>Forgot Password?</p>
+          <div class="last">
+            <div class="check-re">
+              <input type="checkbox" />
+              <p>Remember Me?</p>
+            </div>
+            <div class="forgot">
+              <p>Forgot Password?</p>
+            </div>
           </div>
-        </div>
-        <div class="six">Login</div>
+          <div class="six">
+            <button type="submit">Login</button>
+          </div>
+        </form>
       </div>
     </div>
+    <script>
+      const form = document
+        .getElementById("form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          let userNameValues = document.getElementById("input1").value;
+          let userPassValues = document.getElementById("input2").value;
+          if (
+            userNameValues.length >= 5 &&
+            userNameValues.length <= 8 &&
+            userPassValues.length >= 5 &&
+            userPassValues.length <= 8
+          ) {
+            alert("Your successfully loged in!");
+            window.location.reload();
+          } else {
+            alert("Please your cridentials should be between 5 and 8 values.");
+            window.location.reload();
+          }
+        });
+    </script>
   </body>
 </html>
